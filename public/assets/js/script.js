@@ -1,8 +1,6 @@
-const { response } = require("express");
-
 const $animalForm = document.querySelector('#animal-form');
 
-const handleAnimalSubmit = event => {
+const handleAnimalFormSubmit = event => {
   event.preventDefault();
 
   // get animal data and organize it
@@ -48,4 +46,4 @@ const handleAnimalSubmit = event => {
     });
 };
 
-$animalForm.addEventListener('submit', handleAnimalSubmit);
+$animalForm.addEventListener('submit', handleAnimalFormSubmit);
